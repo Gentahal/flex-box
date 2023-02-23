@@ -1,0 +1,149 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+/* Satu */
+
+.container-satu {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.kolom-utama {
+    flex: 1;
+}
+
+.left-sidebar {
+    flex: 1;
+}
+
+.right-sidebar {
+    flex: 1;
+}
+
+/* Dua */
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.layanan {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.layanan.satu {
+    background-color: burlywood;
+}
+
+.layanan.dua {
+    background-color: aquamarine;
+}
+
+.layanan.tiga {
+    background-color: aqua;
+}
+/* Tiga */
+.container-tiga{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail{
+    width: 50%;
+}
+
+.thumbnail img{
+    width: 100%;
+}
+
+.container-empat{
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.card{
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.card .header{
+    height: 155px;
+    background-color: #666;
+}
+
+.card .content{
+    text-align: center;
+    margin: 20px;
+}
+
+.card.besar{
+    transform: scale(1.12);
+}
+
+.container-lima{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #fff;
+    margin: auto;
+    display: flex;
+    
+}
+
+.kotak{
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    background-color: rebeccapurple;
+}
+
+.kotak span{
+    margin: auto;
+}
+
+
+/* Responsive */
+
+@media(min-width: 600px) {
+    .container-satu {
+        display: flex;
+    }
+
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layanan{
+        width: 30%;
+    }
+
+    .thumbnail{
+        width: 25%;
+    }
+
+}
